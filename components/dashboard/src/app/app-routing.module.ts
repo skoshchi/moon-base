@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./missions/missions.module').then( m => m.MissionsPageModule)
   },
   {
+    path: 'mission/123',
+    loadChildren: () => import('./mission-example/mission-example.module').then( m => m.MissionsExamplePageModule)
+  },
+  {
     path: 'car-detail/:id',
     loadChildren: () => import('./car-detail/car-detail.module').then( m => m.CarDetailPageModule)
   },

@@ -4,6 +4,11 @@ import missionsInitData from 'data/init-data.json';
 interface MISSIONS {
   id: Number;
   name: String;
+  eng_id: Number;
+  eng_name: String;
+  location: String;
+  status: String;
+
 }
 
 @Component({

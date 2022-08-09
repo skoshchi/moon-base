@@ -13,19 +13,28 @@
     <ion-card class="welcome-card">
     
       <ion-card-content>
+        <input type="text" placeholder="filter">
         <table class="missions-table">
-          <thead>
-            <tr>
-              <th>Mission ID</th>
-              <th>Mission Name</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let mission of Missions">
-              <td>{{ mission.id }}</td>
-              <td>{{ mission.name }}</td>
-            </tr>
-          </tbody>
+          <tr>
+            <th>Mission ID</th>
+            <th>Mission Name</th>
+            <th>Engineer ID</th>
+            <th>Engineer Name</th>
+            <th>Location</th>
+            <th>Status</th>
+            <th>Rover</th>
+            <th>Link</th>
+          </tr>
+          <tr *ngFor="let mission of Missions">
+            <td>{{ mission.id }}</td>
+            <td>{{ mission.name }}</td>
+            <td>{{ mission.eng_id }}</td>
+            <td>{{ mission.eng_name }}</td>
+            <td>{{ mission.location }}</td>
+            <td>{{ mission.status }}</td>
+            <td><a href="car-detail/b855335e-2266-46f5-a8fc-53e4a85b03c3">rover info</a></td>
+            <td><a href="mission/123">mission info</a></td>
+          </tr>
          </table>
       </ion-card-content>
       
