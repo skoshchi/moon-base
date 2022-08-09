@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Missions
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+    <ion-card class="welcome-card">
+    
+      <ion-card-content>
+        <table class="missions-table">
+          <thead>
+            <tr>
+              <th>Mission ID</th>
+              <th>Mission Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let mission of Missions">
+              <td>{{ mission.id }}</td>
+              <td>{{ mission.name }}</td>
+            </tr>
+          </tbody>
+         </table>
+      </ion-card-content>
+      
+    </ion-card>
+
+    
+
+    
+
+</ion-content>
